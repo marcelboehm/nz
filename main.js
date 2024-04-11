@@ -281,8 +281,8 @@ let geodata = {
 L.geoJSON(geodata, {}).bindPopup(function (layer) {
     return `<h2>${layer.feature.properties.name}</h2>
     <ul>
-        <li>Latitude: ${layer.feature.geometry.coordinates[0]}</li>
-        <li>Longitude: ${layer.feature.geometry.coordinates[1]}</li>
+        <li>Latitude: ${layer.feature.geometry.coordinates[0].toFixed(5)}</li>
+        <li>Longitude: ${layer.feature.geometry.coordinates[1].toFixed(5)}</li>
         <li>Wikipedia: <a href="${layer.feature.properties.wikipedia}">${layer.feature.properties.wikipedia}</a></li>
         <li>Site: <a href="https://${layer.feature.properties.user}.github.io/nz">Etappenseite</a></li>
     </ul>
