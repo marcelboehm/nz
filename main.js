@@ -1,6 +1,6 @@
 let lat = -44.697222;
 let long = 169.135278;
-let zoom = 13;
+let zoom = 12;
 
 var map = L.map('map').setView([lat, long], zoom);
 
@@ -289,3 +289,4 @@ L.geoJSON(geodata, {}).bindPopup(function (layer) {
     </ul>
     `
 }).addTo(map);
+
